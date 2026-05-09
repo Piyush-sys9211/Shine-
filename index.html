@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SHINE MUSIX</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+    <div class="logo">
+        SHINE MUSIX
+    </div>
+
+    <div class="shiva-box">
+
+        <h3>🕉 Divine Vibes</h3>
+
+        <p>
+        Blessed by the energy of Lord Shiva.
+        Where music meets peace and power.
+        </p>
+
+        <div class="shiva-line">
+        ✨ Feel The Beat Of The Universe
+        </div>
+
+    </div>
+
+</div>
+
+<!-- MAIN -->
+
+<div class="main">
+
+    <!-- TOPBAR -->
+
+    <div class="topbar">
+
+        <div class="search">
+
+            <input
+            type="text"
+            placeholder="Search Songs, Artists..."
+            >
+
+        </div>
+
+        <!-- SUPPORT BUTTON -->
+
+        <button class="support-btn" onclick="openSupport()">
+        ❤️ Support
+        </button>
+
+    </div>
+
+    <!-- HERO -->
+
+    <div class="hero">
+
+        <div>
+
+            <h1>
+            Search Music.<br>
+            <span>Feel The Vibes.</span>
+            </h1>
+
+            <p>
+            A futuristic musical universe inspired by divine vibes and neon aesthetics.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- RESULTS -->
+
+    <h2 class="section-title">
+    Recommendations 🔥
+    </h2>
+
+    <div class="cards"></div>
+
+</div>
+
+<!-- PLAYER -->
+
+<div class="player">
+
+    <div class="now-playing">
+
+        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1200&auto=format&fit=crop">
+
+        <div>
+
+            <h4>No Song Playing</h4>
+
+            <p>
+            SHINE MUSIX
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="controls">
+
+        <span>⏮</span>
+
+        <span id="playBtn">▶</span>
+
+        <span>⏭</span>
+
+    </div>
+
+</div>
+
+<!-- SUPPORT POPUP -->
+
+<div class="support-popup" id="supportPopup">
+
+    <div class="support-card">
+
+        <span class="close-btn" onclick="closeSupport()">
+        ✖
+        </span>
+
+        <h2>
+        ❤️ Support SHINE MUSIX
+        </h2>
+
+        <p>
+        Your support keeps the music alive 🎵
+        </p>
+
+        <div class="upi-box">
+
+            <span id="upiText">
+            8395979644@fam
+            </span>
+
+            <button onclick="copyUPI()">
+            COPY
+            </button>
+
+        </div>
+
+        <a
+        href="upi://pay?pa=8395979644@fam&pn=SHINE%20MUSIX"
+        class="pay-btn"
+        >
+        💸 Pay Now
+        </a>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+<footer class="footer">
+  <h2 class="typing">
+    Crafted By <span>Shivay</span>
+  </h2>
+
+  <a href="https://instagram.com/aryanhryana" target="_blank" class="insta-btn">
+    Follow on Instagram
+  </a>
+</footer>
+<a href="https://instagram.com/aryanhryana" target="_blank" class="insta-btn">
+  📸 @aryanhryana
+</a>
+</body>
+</html>
