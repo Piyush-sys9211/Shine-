@@ -10,7 +10,6 @@
 <link rel="stylesheet" href="style.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
@@ -18,162 +17,115 @@
 
 <body>
 
-<!-- SIDEBAR -->
+<header>
 
-<div class="sidebar">
+<div class="logo">SHINE MUSIX</div>
 
-    <div class="logo">
-        SHINE MUSIX
-    </div>
+<div class="search-box">
 
-    <div class="shiva-box">
+<input type="text" id="searchInput" placeholder="Search Songs...">
 
-        <h3>🕉 Divine Vibes</h3>
-
-        <p>
-        Blessed by the energy of Lord Shiva.
-        Where music meets peace and power.
-        </p>
-
-        <div class="shiva-line">
-        ✨ Feel The Beat Of The Universe
-        </div>
-
-    </div>
+<button onclick="searchSongs()">
+🔍
+</button>
 
 </div>
 
-<!-- MAIN -->
+</header>
 
-<div class="main">
+<section class="hero">
 
-<!-- TOPBAR -->
-<div class="topbar">
+<div class="hero-card">
 
-  <div class="search">
-    <i class="search-icon">🔍</i>
+<h1>Feel The Music 🎧</h1>
 
-    <input type="text" placeholder="Search Songs, Artists...">
-
-    <i class="arrow-icon">➜</i>
-  </div>
-
-  <!-- SUPPORT BUTTON -->
-  <button class="support-btn" onclick="openSupport()">
-    ❤️ Support
-  </button>
-
-</div>
-    <!-- HERO -->
-
-    <div class="hero">
-
-        <div>
-
-            <h1>
-            Search Music.<br>
-            <span>Feel The Vibes.</span>
-            </h1>
-
-            <p>
-            A futuristic musical universe inspired by divine vibes and neon aesthetics.
-            </p>
-
-        </div>
-
-    </div>
-
-    <!-- RESULTS -->
-
-    <h2 class="section-title">
-    Recommendations 🔥
-    </h2>
-
-    <div class="cards"></div>
+<p>
+Search, stream, download and create playlists.
+</p>
 
 </div>
 
-<!-- PLAYER -->
+</section>
+
+<h2 class="section-title">
+Trending Playlists
+</h2>
+
+<div class="playlists">
+
+<div class="playlist">
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=500">
+<h3>Night Vibes</h3>
+</div>
+
+<div class="playlist">
+<img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?q=80&w=500">
+<h3>LoFi Chill</h3>
+</div>
+
+<div class="playlist">
+<img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?q=80&w=500">
+<h3>Party Hits</h3>
+</div>
+
+</div>
+
+<div class="playlist-create">
+
+<button onclick="createPlaylist()">
+＋ Create Playlist
+</button>
+
+</div>
+
+<div id="userPlaylists"></div>
+
+<h2 class="section-title">
+Songs
+</h2>
+
+<div class="songs" id="songsContainer"></div>
 
 <div class="player">
 
-    <div class="now-playing">
+<div class="player-top">
 
-        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1200&auto=format&fit=crop">
+<img id="playerImg" src="">
 
-        <div>
+<div class="player-info">
 
-            <h4>No Song </h4>
+<h4 id="playerTitle">
+No Song Playing
+</h4>
 
-        </div>
+<p id="playerArtist">
+---
+</p>
 
-    </div>
-
-    <div class="controls">
-
-        <span>⏮</span>
-
-        <span id="playBtn">▶</span>
-
-        <span>⏭</span>
-
-    </div>
+<input
+type="range"
+class="seekbar"
+id="seekbar"
+value="0"
+>
 
 </div>
 
-<!-- SUPPORT POPUP -->
+</div>
 
-<div class="support-popup" id="supportPopup">
+<div class="controls">
 
-    <div class="support-card">
+<button onclick="togglePlay()">
+▶
+</button>
 
-        <span class="close-btn" onclick="closeSupport()">
-        ✖
-        </span>
+</div>
 
-        <h2>
-        ❤️ Support SHINE MUSIX
-        </h2>
-
-        <p>
-        Your support keeps the music alive 🎵
-        </p>
-
-        <div class="upi-box">
-
-            <span id="upiText">
-            8395979644@fam
-            </span>
-
-            <button onclick="copyUPI()">
-            COPY
-            </button>
-
-        </div>
-
-        <a
-        href="upi://pay?pa=8395979644@fam&pn=SHINE%20MUSIX"
-        class="pay-btn"
-        >
-        💸 Pay Now
-        </a>
-
-    </div>
+<audio id="audio"></audio>
 
 </div>
 
 <script src="script.js"></script>
-<footer class="footer">
-  <h2 class="typing">
-    Crafted By <span>ARYAN !</span>
-  </h2>
 
-  <a href="https://instagram.com/aryanhryana" target="_blank" class="insta-btn">
-    Follow on Instagram
-  </a>
-</footer>
-<a href="https://instagram.com/aryanhryana" target="_blank" class="insta-btn">
-  📸 @aryanhryana
-</a>
 </body>
 </html>
